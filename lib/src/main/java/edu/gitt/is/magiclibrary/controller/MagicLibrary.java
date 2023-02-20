@@ -21,7 +21,7 @@ public class MagicLibrary {
 	 * <p>Con esta operaci�n se indica a la aplicaci�n donde est� el fichero de propiedades de trazado</p>
 	 */
 	
-	/*
+	
 	static {
 	      String path = MagicLibrary.class.getClassLoader()
 	                                  .getResource("log.properties")
@@ -29,15 +29,14 @@ public class MagicLibrary {
 	      System.setProperty("java.util.logging.config.file", path);
 	     
 	}
-	*/
 	private static Logger log=Logger.getLogger(MagicLibrary.class.getName());
 	
 	/**
 	 * @param args Actualmente el programa no analiza los par�metros de entrada al main
 	 */
 	public static void main(String[] args) {
+		log.info("Este cambio se ha realizado para generar un conflicto");
 		log.info("Hola soy Álvaro ejecutando la aplicación");
-		
 		log.info("Arranco la aplicaci�n y creo el controlador para manejar entidades desde la interfaz");
 		log.log(Level.INFO, "Arranco la aplicaci�n y creo el controlador para manejar entidades desde la interfaz");
 
